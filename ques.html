@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Magic 8 Ball</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="load();">
+    <div class="top-sec">
+        <h1 id="userhead">Enter your Question</h1>
+        <input type="text" id="userques" class="username">
+    
+        <button class="btn primary-btn"
+         onclick="shake()">Enter</button>
+
+         <button class="btn primary-btn"
+         onclick="window.location.href='ques.html'">
+             TryAgain</button>
+        <button class="btn primary-btn"
+        onclick="window.location.href='magic-8-ball.html'">
+            Quit
+        </button>     
+    </div>
+
+    <div class="row">
+        <img id="ball"
+        src="https://shashish-mishra.github.io/magic-8-balls/8ball.png" 
+        alt="8-ball-magic-buton">
+
+        <div id="fortune">
+            <div id="questions">
+                <h3>Click on the questions to get the predictions..</h3>
+              <ul>
+                 <li onclick="prediction()">
+                    Will i win lottery in 2021?</li>
+                 <li onclick="prediction()">
+                    Will Donald Trump be our next President?</li>
+                 <li onclick="prediction()">
+                    Will we get more snow this year than last year?</li>
+                 <li onclick="prediction()">
+                    Should I order pizza tonight?</li>
+                 <li onclick="prediction()">
+                    Well, should I cook dinner instead?</li>
+                 <li onclick="prediction()">
+                    Should we do this again?</li>
+                 <li onclick="prediction()">
+                    Should I skip my surgery and go on vacations?</li>
+                 <li onclick="prediction()">
+                    Should I start dieting?</li>
+                 <li onclick="prediction()">
+                    Will I buy a car in 2021?</li>
+                 <li onclick="prediction()">
+                    Will I be millionare in 2021?</li>
+             </ul>
+
+            
+            </div>
+            <p id = "fortune-prediction"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

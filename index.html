@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Magic 8 Ball</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="top-sec" >
+        <h1 id="heading">Enter your name </h1>
+        <input type="text" id="user" class="username">
+        <button class=" btn primary-btn" 
+        onclick="usertake()">Enter</button>
+       
+    </div>
+
+    <div class="row">
+        <img id="ball"
+        src="https://shashish-mishra.github.io/magic-8-balls/8ball.png" 
+        alt="8-ball-magic-buton">
+
+        <div id="fortune" style="margin-top: 20px; display: block;">
+            <div id="messege" 
+            style=" font-size: 32px;
+            margin: 128px 0px 0px 64px;">
+            </div>
+    </div>
+
+       <button id="fortune-btn" 
+       class="btn primary-btn btn-fortune" 
+       onclick="window.location.href = 'ques.html'"
+       style=" display:none">Get your fortune</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
